@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>TV Show form</title>
+  </head>
+  <body>
+    <form>
+      <div class="form_group">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Type name here" required />
+      </div>
+      <div class="form_group">
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" placeholder="Seperate with space" required />
+      </div>
+      <div class="form_group">
+        <label for="season">Seasons</label>
+        <input type="text" name="season" placeholder="6" pattern="[0-9]+" maxlength="2" required />
+      </div>
+      <div class="form_group">
+        <label for="director">Director</label>
+        <input type="text" name="director" placeholder="Director" required />
+      </div>
+      <div class="form_group">
+        <label for="rating">Rating</label>
+        <div>
+          <label><input type="radio" name="rating" required />0</label>
+          <label><input type="radio" name="rating" />1</label>
+          <label><input type="radio" name="rating" />2</label>
+          <label><input type="radio" name="rating" />3</label>
+          <label><input type="radio" name="rating" />4</label>
+          <label><input type="radio" name="rating" />5</label>
+        </div>
+      </div>
+      <div class="form_group">
+        <label for="ongoing">Ongoing?</label>
+        <label>Yes<input type="checkbox" name="ongoing" required /><span></span></label>
+      </div>
+      <input type="button" name="btn" value="Submit" />
+    </form>
+  </body>
+</html>
